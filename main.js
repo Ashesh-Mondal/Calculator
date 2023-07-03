@@ -32,11 +32,9 @@ Array.from(buttons).forEach((button) => {
       if (current.toString().startsWith("-")) {
         let currentArr = Array.from(current);
         currentArr = currentArr.slice(1);
-        console.log(currentArr);
         current = Number(currentArr);
       } else {
         current = "-" + current;
-        console.log(current);
       }
     } else if (allOperations.includes(e.target.innerText)) {
       operation = e.target.innerText;
