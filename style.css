@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(47, 151, 151);
+}
+
+.container {
+  height: 59.2rem;
+  width: 30rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 5rem 0.3rem rgba(19, 44, 44, 0.344);
+}
+
+.display {
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: whitesmoke;
+}
+
+.display .history {
+  font-size: 3rem;
+  color: rgb(47, 151, 151);
+}
+
+.display .current {
+  font-size: 5rem;
+}
+
+.number_pad {
+  background-color: hsl(0, 0%, 90%);
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.1rem -1rem 5rem 0.5rem rgba(204, 221, 221, 0.907);
+}
+
+.row {
+  display: flex;
+}
+
+.button {
+  height: 7.1rem;
+  font-size: 2rem;
+  flex: 1;
+  border: none;
+}
+
+.main_operation {
+  font-size: 3rem;
+  background: rgba(47, 151, 151, 0.615);
+}
+
+.equals {
+  width: 10.3rem;
+  flex: 2;
+  background: rgb(47, 151, 151);
+}
