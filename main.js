@@ -29,17 +29,12 @@ Array.from(buttons).forEach((button) => {
     } else if (e.target.innerText === "%") {
       current = current / 100;
     } else if (e.target.innerText === "+/-") {
-      //   let currentArr = current.toString();
       if (current.toString().startsWith("-")) {
-        console.log("If portion");
         let currentArr = Array.from(current);
-        // current = "" + current;
-        currentArr[0] = "+";
-        current = currentArr[0] + current;
+        currentArr = currentArr.slice(1);
         console.log(currentArr);
-        console.log(current);
+        current = Number(currentArr);
       } else {
-        console.log("Else portion");
         current = "-" + current;
         console.log(current);
       }
